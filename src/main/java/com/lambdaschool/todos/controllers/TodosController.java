@@ -33,8 +33,8 @@ public class TodosController
     public ResponseEntity<?> completeTodo(
         @PathVariable
             long todoid)
-    {
-        todosService.markComplete(todoid);
+   {
+//        todosService.markComplete(todoid);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }
